@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;700&display=swap" rel="stylesheet">
+<link rel="icon" href="ibrahim2.jpg" type="image/x-icon">
+  <title>Ibrahim Sanitary</title>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+ <!--Popup Element Starting Here-->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <img src="ibrahim2.jpg" alt="Company Logo" style="width: 100%;">
+      <textarea id="myTextarea" placeholder="Paste your text here..."></textarea>
+      <button class="paste-button" onclick="pasteTextForInvoice('invoice')">ইনভয়েস</button>
+      <button class="paste-button" onclick="pasteTextForChallan('challan')">চালান</button>
+    </div>
+  </div>
+   <!--Popup Element End Here-->
+  
+
+    <div class="container">
+    <!--Company Information-->
+    <div class="company-info">
+      <img src="ibrahim2.jpg" alt="Company Logo" onclick="window.print()" class="img-print-button">
+      <div>
+        <h1>মেসার্স ইব্রাহীম স্যানিটারী</h1>  
+        <p> হাতেম আলী কম্প্লেক্স (মার্কেটাইল ব্যংকের নিচে), সিংগাইর রোড, হেমায়েতপুর, সাভার, ঢাকা।<br>
+          Email: ibrahimsanitary14@gmail.com <strong>BIN: 005501764/0403</strong>  <br>
+          মোবাইল: 01774755575, 01600364271  
+          ম্যানেজার: 01600364272<br>
+        </p>
+      </div> 
+    </div>
+
+  <div class="header">বিক্রয় চালান</div>
+
+<!---Customer Information-->
+    <div class="row customer-info"> 
+      <div class="col-6">
+        ক্রেতার আইডি: ‍<span id="customer-id"></span><br>
+        ক্রেতার নাম :<span id="customer-name" contenteditable="true"></span> <br> 
+        ক্রেতার মোবাইল নম্বর:<span id="customer-number"></span> <br>
+        ক্রেতার ঠিকানা:<span id="customer--address"></span><br>
+        পণ্য যেখানে যাবে:<span id="customer-delivery-address"></span>
+      </div> 
+      <div class="col-6 text-right">
+        বিক্রি করেছেন:জিসান আহম্মেদ<br>
+        চালান নম্বর:<span id="customer-challan-no"></span><br>
+        বিক্রির সময় ও তারিখ: <span id="sales-time"></span>
+      </div> 
+    </div>
+
+     <!--Product Details-->
+     <table class="product-details">
+      <thead>
+        <tr>
+          <td>ক্রম</td>
+          <td>কোড</td>
+          <td>বিবরণ</td> 
+          <td colspan="3">পরিমান</td>
+          <td id="unit-price">একক দাম</td>
+          <td id="total-price">মোট</td> 
+        </tr>
+      </thead>
+      <tbody id="dinamic-product-add" style="font-weight:bold ;">
+     
+        
+      </tbody>
+    </table> 
+
+    <div class="row" id="row-2">
+      <div class="col-6">
+        <br>
+        <table class="pull-left">
+          <tr>
+            <td>পূর্বের বকেয়া:</td>
+            <td id="previous-due">0</td> 
+          </tr>
+          <tr>
+            <td>বর্তমান বকেয়া:	</td>
+            <td id="present-due">0</td>
+          </tr>
+          <tr>
+            <td>মোট বকেয়া:</td>
+            <td id="total-due">0</td>
+          </tr>
+        </table> 
+      </div>  
+      <div class="col-6">
+        <table class="money-details"> 
+          <tr>
+            <td class="subtotal">সর্বমোট মালের মূল্য:</td>
+            <td id="subtotal">0</td> 
+          </tr>
+          <tr>
+            <td class="vat">ভ্যাট (+):</td>
+            <td id="vat">0</td>
+          </tr> 
+          <tr>
+            <td class="discount">ডিষ্কাউন্ট (-):</td>
+            <td id="discount">0</td>
+          </tr>
+          <tr>
+            <td class="labour">লেবার খরচ(+):</td>
+            <td id="labour-cost">0</td>
+          </tr>
+          <tr>
+            <td class="transport">পরিবহন খরচ (+):</td>
+            <td id="transport-cost">0</td>
+          </tr>
+          <tr class="top-border-line">
+            <td class="total-amount">মোট টাকা:</td>
+            <td id="total-amount">0</td>
+          </tr>
+          <tr>
+            <td class="paid-amount">জমার পরিমাণ:</td>
+            <td id="submision-ammount">0</td>
+          </tr>
+          <tr class="top-border-line">
+            <td  class="due-amount">বকেয়া পরিমাণ:</td>
+            <td id="due-amount">0</td>
+          </tr>
+        </table> 
+      </div>
+    </div>
+
+    
+ <div class="signature-section" id="signature-section">
+    <div class="signature received-by">গ্রহণকারীর স্বাক্ষর</div>
+    <div class="signature received-by">বিক্রেতা স্বাক্ষর</div>
+    <div class="signature authorized-by">দ্বারা অনুমোদিত</div>
+</div>
+
+ 
+    <div class="row">
+      <div class="col-6">
+        <strong>বি.দ্রঃ- </strong> <span contenteditable="true" id="worning"> </span> 
+      </div>
+      <div class="col-6" style="text-align: right;">
+        <span contenteditable="true" id="randomStringContainer"> </span> 
+      </div>
+    </div> 
+  </div>
+ 
+
+<script src="product.js"></script> 
+  <script src="script.js"></script> 
+</body>
+</html>
+   
