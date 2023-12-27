@@ -2056,15 +2056,15 @@ var productlist = {
     P02406    :" ¾” cPVC িইউনিউন - Era",
     P02407    :" ¾” cPVC অফসেট - Era",
     P02408    :" ¾” cPVC ক্রস টি - Era",
-    P02409 :" ৪” সুতা বিট",
-    P02410 :" ২” সুতা বিট",
-    P02411 :" ৪” ইনক্যাপ - ",
-    P02412  :" 4” Pascap - N Poly",
-    P02413 :" 6” Pascap - VIP",
-    P02414 :" 1½” M.S Star Pipe - Hatim",
-    P02415:" 2½” Ball Valve SS",
-    P02416:"Catdoor (26”x30”) Diamond Light - N Poly",
-    P02417:"(7x2.5)' A. Left Diamond Sailor - N Poly"
+    P02409    :" ৪” সুতা বিট",
+    P02410    :" ২” সুতা বিট",
+    P02411    :" ৪” ইনক্যাপ - ",
+    P02412    :" 4” পেচক্যাপ - N Poly",
+    P02413    :" 6” পেচক্যাপ - VIP",
+    P02414    :" 1½” M.S স্টার পাইপ - Hatim",
+    P02415    :" 2½” বল ভাল্ভ SS",
+    P02416    :"ক্যাটডোর (26”x30”) ডাইমন্ড লাইট - N Poly",
+    P02417    :"(7x2.5)' A. বাম ডাইমন্ড সেইলর - N Poly"
   }
 
 var stringArray =[
