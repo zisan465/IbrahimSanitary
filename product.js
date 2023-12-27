@@ -2063,6 +2063,8 @@ var productlist = {
     P02413 :" 6” Pascap - VIP",
     P02414 :" 1½” M.S Star Pipe - Hatim",
     P02415:" 2½” Ball Valve SS",
+    P02416:"Catdoor (26”x30”) Diamond Light - N Poly",
+    P02417:"(7x2.5)' A. Left Diamond Sailor - N Poly"
   }
 
 var stringArray =[
