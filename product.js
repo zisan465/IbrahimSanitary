@@ -2051,13 +2051,18 @@ var productlist = {
     P02401    :" ¾” cPVC প্লেইন সকেট - Era ",
     P02402    :" ¾” cPVC সকেট মেল থ্রেড - Era ",
     P02403    :" ¾” cPVC মেল সকেট ব্রাশ - Era ",
-     P02404   :" ১x½” cPVC ফিমেল এলবো - Era ",
-     P02405   :" ১x½” cPVC ফিমেল সকেট - ব্রাশ - Era",
+    P02404   :" ১x½” cPVC ফিমেল এলবো - Era ",
+    P02405   :" ১x½” cPVC ফিমেল সকেট - ব্রাশ - Era",
     P02406    :" ¾” cPVC িইউনিউন - Era",
     P02407    :" ¾” cPVC অফসেট - Era",
     P02408    :" ¾” cPVC ক্রস টি - Era",
     P02409 :" ৪” সুতা বিট",
-    P02410 :" ২” সুতা বিট"
+    P02410 :" ২” সুতা বিট",
+    P02411 :" ৪” ইনক্যাপ - ",
+    P02412  :" 4” Pascap - N Poly",
+    P02413 :" 6” Pascap - VIP",
+    P02414 :" 1½” M.S Star Pipe - Hatim",
+    P02415:" 2½” Ball Valve SS",
   }
 
 var stringArray =[
